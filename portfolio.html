@@ -12,35 +12,36 @@
     <link rel="stylesheet" href="./css/main.min.css">
 </head>
 
-<body class="page">
+<body class="body">
     <!--Шапка-->
-    <header class="page-header">
-        <div class="container header">
+    <header class="header">
+        <div class="container header__container">
             <a href="./index.html" class="logo">
-                <span class="logo accent">Web</span><span class="logo primary">Studio</span>
+                <span class="logo--accent">Web</span><span class="logo--primary">Studio</span>
             </a>
-    
+
             <!--Навигация по сайту-->
-            <nav>
-                <ul class="site-nav list">
-                    <li class="item"><a href="./index.html" class="link">Студия</a></li>
-                    <li class="item"><a href="./portfolio.html" class="link curent">Портфолио</a></li>
-                    <li class="item"><a href="" class="link">Контакты</a></li>
+            <nav class="site-nav">
+                <ul class="site-nav__list list">
+                    <li class="site-nav__item"><a href="./index.html"
+                            class="site-nav__link">Студия</a></li>
+                    <li class="site-nav__item"><a href="./portfolio.html" class="site-nav__link site-nav__link--curent">Портфолио</a></li>
+                    <li class="site-nav__item"><a href="" class="site-nav__link">Контакты</a></li>
                 </ul>
             </nav>
-    
+
             <!--Почта, телефон-->
-            <ul class="site-contact list">
-                <li class="item">
-                    <a href="mailto:info@devstudio.com" class="link">
-                        <svg class="header-icon-mail" width="16px" height="12px">
+            <ul class="site-contact__list list">
+                <li class="site-contact__item">
+                    <a href="mailto:info@devstudio.com" class="site-contact__link link">
+                        <svg class="site-contact__icon--mail" width="16px" height="12px">
                             <use href="./images/icons.svg#envelope"></use>
                         </svg>
                         info@devstudio.com</a>
                 </li>
-                <li class="item">
-                    <a href="tel:+380961111111" class="link">
-                        <svg class="header-icon-phone" width="10px" height="16px">
+                <li class="site-contact__item">
+                    <a href="tel:+380961111111" class="site-contact__link link">
+                        <svg class="site-contact__icon--phone" width="10px" height="16px">
                             <use href="./images/icons.svg#smartphone"></use>
                         </svg>
                         +38 096 111 11 11</a>
@@ -51,142 +52,142 @@
 
     <main>
         <!-- Фильтр кнопок -->
-        <section class="section filter">
-            <div class="container">
-                <h1 class="section-title visually-hidden">Фильтр кнопок</h1>
-                <ul class="filter-list list">
-                    <li class="item">
-                        <button type="button" class="button secondary">Все</button>
+        <section class="filter">
+            <div class="filter__container container">
+                <h1 class="section__title visually-hidden">Фильтр кнопок</h1>
+                <ul class="filter__list list">
+                    <li class="filter__item">
+                        <button type="button" class="button button__secondary">Все</button>
                     </li>
-                    <li class="item">
-                        <button type="button" class="button secondary">Веб-сайты</button>
+                    <li class="filter__item">
+                        <button type="button" class="button button__secondary">Веб-сайты</button>
                     </li>
-                    <li class="item">
-                        <button type="button" class="button secondary">Приложения</button>
+                    <li class="filter__item">
+                        <button type="button" class="button button__secondary">Приложения</button>
                     </li>
-                    <li class="item">
-                        <button type="button" class="button secondary">Дизайн</button>
+                    <li class="filter__item">
+                        <button type="button" class="button button__secondary">Дизайн</button>
                     </li>
-                    <li class="item">
-                        <button type="button" class="button secondary">Маркетинг</button>
+                    <li class="filter__item">
+                        <button type="button" class="button button__secondary">Маркетинг</button>
                     </li>
                 </ul>
-                <ul class="filter-foto list">
-                    <li class="product-border">
-                        <div class="product-thumb">
-                            <img class="product-foto" src="./images/img01.jpg" alt="Экран ноутбука" width="370">
-                            <div class="product-overlay">
+                <ul class="filter-foto__list list">
+                    <li class="filter-foto__item">
+                        <div class="filter-foto__thumb">
+                            <img src="./images/img01.jpg" alt="Экран ноутбука" width="370">
+                            <div class="filter-foto__overlay">
                                 <p>Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить
                                 исчерпывающие сведения о компании или частном лице.</p>
                             </div>
                         </div>
-                        <div class="product-container">
-                            <h2 class="product">Технокряк</h2>
-                            <p class="product-text">Веб-сайт</p>
+                        <div class="filter-foto__container">
+                            <h2 class="filter-foto__title">Технокряк</h2>
+                            <p class="filter-foto__text">Веб-сайт</p>
                         </div>
                     </li>
-                    <li class="product-border">
-                        <div class="product-thumb">
+                    <li class="filter-foto__item">
+                        <div class="filter-foto__thumb">
                             <img src="./images/img02.jpg" alt="Баскетболисты" width="370">
-                            <div class="product-overlay">
+                            <div class="filter-foto__overlay">
                                 <p>Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю
                                     получить исчерпывающие сведения о компании или частном лице.</p>
                             </div>
                         </div>                        
-                        <div class="product-container">
-                            <h2 class="product">Постер New Orlean vs Golden Star</h2>
-                            <p class="product-text">Дизайн</p>
+                        <div class="filter-foto__container">
+                            <h2 class="filter-foto__title">Постер New Orlean vs Golden Star</h2>
+                            <p class="filter-foto__text">Дизайн</p>
                         </div>
                     </li>
-                    <li class="product-border">
-                        <div class="product-thumb">
+                    <li class="filter-foto__item">
+                        <div class="filter-foto__thumb">
                             <img src="./images/img03.jpg" alt="Лого ресторана" width="370">
-                            <div class="product-overlay">
+                            <div class="filter-foto__overlay">
                                 <p>Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю
                                     получить исчерпывающие сведения о компании или частном лице.</p>
                             </div>
                         </div>                        
-                        <div class="product-container">
-                            <h2 class="product">Ресторан Seafood</h2>
-                            <p class="product-text">Приложение</p>
+                        <div class="filter-foto__container">
+                            <h2 class="filter-foto__title">Ресторан Seafood</h2>
+                            <p class="filter-foto__text">Приложение</p>
                         </div>
                     </li>
-                    <li class="product-border">
-                        <div class="product-thumb">
+                    <li class="filter-foto__item">
+                        <div class="filter-foto__thumb">
                             <img src="./images/img04.jpg" alt="Наушники" width="370">
-                            <div class="product-overlay">
+                            <div class="filter-foto__overlay">
                                 <p>Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю
                                     получить исчерпывающие сведения о компании или частном лице.</p>
                             </div>
                         </div>                        
-                        <div class="product-container">
-                            <h2 class="product">Проект Prime</h2>
-                            <p class="product-text">Маркетинг</p>
+                        <div class="filter-foto__container">
+                            <h2 class="filter-foto__title">Проект Prime</h2>
+                            <p class="filter-foto__text">Маркетинг</p>
                         </div>
                     </li>
-                    <li class="product-border">
-                        <div class="product-thumb">
+                    <li class="filter-foto__item">
+                        <div class="filter-foto__thumb">
                             <img src="./images/img05.jpg" alt="Две коробки" width="370">
-                            <div class="product-overlay">
+                            <div class="filter-foto__overlay">
                                 <p>Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю
                                     получить исчерпывающие сведения о компании или частном лице.</p>
                             </div>
                         </div>                        
-                        <div class="product-container">
-                            <h2 class="product">Проект Boxes</h2>
-                            <p class="product-text">Приложение</p>
+                        <div class="filter-foto__container">
+                            <h2 class="filter-foto__title">Проект Boxes</h2>
+                            <p class="filter-foto__text">Приложение</p>
                         </div>
                     </li>
-                    <li class="product-border">
-                        <div class="product-thumb">
+                    <li class="filter-foto__item">
+                        <div class="filter-foto__thumb">
                             <img src="./images/img06.jpg" alt="Экран монитора" width="370">
-                            <div class="product-overlay">
+                            <div class="filter-foto__overlay">
                                 <p>Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю
                                     получить исчерпывающие сведения о компании или частном лице.</p>
                             </div>
                         </div>                        
-                        <div class="product-container">
-                            <h2 class="product">Inspiration has no Borders</h2>
-                            <p class="product-text">Веб-сайт</p>
+                        <div class="filter-foto__container">
+                            <h2 class="filter-foto__title">Inspiration has no Borders</h2>
+                            <p class="filter-foto__text">Веб-сайт</p>
                         </div>
                     </li>
-                    <li class="product-border">
-                        <div class="product-thumb">
+                    <li class="filter-foto__item">
+                        <div class="filter-foto__thumb">
                             <img src="./images/img07.jpg" alt="Журнал" width="370">
-                            <div class="product-overlay">
+                            <div class="filter-foto__overlay">
                                 <p>Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю
                                     получить исчерпывающие сведения о компании или частном лице.</p>
                             </div>
                         </div>                        
-                        <div class="product-container">
-                            <h2 class="product">Издание Limited Edition</h2>
-                            <p class="product-text">Дизайн</p>
+                        <div class="filter-foto__container">
+                            <h2 class="filter-foto__title">Издание Limited Edition</h2>
+                            <p class="filter-foto__text">Дизайн</p>
                         </div>
                     </li>
-                    <li class="product-border">
-                        <div class="product-thumb">
+                    <li class="filter-foto__item">
+                        <div class="filter-foto__thumb">
                             <img src="./images/img08.jpg" alt="Бирка" width="370">
-                            <div class="product-overlay">
+                            <div class="filter-foto__overlay">
                                 <p>Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю
                                     получить исчерпывающие сведения о компании или частном лице.</p>
                             </div>
                         </div>                        
-                        <div class="product-container">
-                            <h2 class="product">Проект LAB</h2>
-                            <p class="product-text">Маркетинг</p>
+                        <div class="filter-foto__container">
+                            <h2 class="filter-foto__title">Проект LAB</h2>
+                            <p class="filter-foto__text">Маркетинг</p>
                         </div>
                     </li>
-                    <li class="product-border">
-                        <div class="product-thumb">
+                    <li class="filter-foto__item">
+                        <div class="filter-foto__thumb">
                             <img src="./images/img09.jpg" alt="Ноутбук" width="370">
-                            <div class="product-overlay">
+                            <div class="filter-foto__overlay">
                                 <p>Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю
                                     получить исчерпывающие сведения о компании или частном лице.</p>
                             </div>
                         </div>                        
-                        <div class="product-container">
-                            <h2 class="product">Growing Business</h2>
-                            <p class="product-text">Приложение</p>
+                        <div class="filter-foto__container">
+                            <h2 class="filter-foto__title">Growing Business</h2>
+                            <p class="filter-foto__text">Приложение</p>
                         </div>
                     </li>
                 </ul>
@@ -194,69 +195,69 @@
         </section>
     </main>
 
-    <footer class="address">
-        <div class="container footer">
+    <footer class="footer">
+        <div class="footer__container container">
             <div>
                 <a href="./index.html">
-                    <span class="logo accent">Web</span><span class="logo secondary">Studio</span>
+                    <span class="logo--accent">Web</span><span class="logo--secondary">Studio</span>
                 </a>
     
-                <address>
-                    <ul class="footer list">
+                <address class="address">
+                    <ul class="address__list">
                         <li>
                             <a href="https://goo.gl/maps/WnCSjLdnpwzuzcvMA" target="_blank" rel="noopener noreferrer"
-                                class="gps">м.
+                                class="address__gps">м.
                                 Київ, пр-т Лесі Українки,
                                 26</a>
                         </li>
                         <li>
-                            <a href="mailto:info@devstudio.com" class="mail link">info@devstudio.com</a>
+                            <a href="mailto:info@devstudio.com" class="address__link">info@devstudio.com</a>
                         </li>
                         <li>
-                            <a href="tel:+380961111111" class=" tel link">+38 096 111 11 11</a>
+                            <a href="tel:+380961111111" class="address__link">+38 096 111 11 11</a>
                         </li>
                     </ul>
                 </address>
             </div>
     
             <div class="join">
-                <h3 class="join-title">присоединяйтесь</h3>
-                <ul class="list">
-                    <li>
-                        <a href="" class="social-icon-bg">
-                            <svg class="social-icon" height="20px" width="20px">
+                <h3 class="join__title">присоединяйтесь</h3>
+                <ul class="join__list list">
+                    <li class="join__social-list">
+                        <a href="" class="social-list__icon-bg">
+                            <svg class="social-list__icon" height="20px" width="20px">
                                 <use href="./images/icons.svg#ig"></use>
                             </svg>
                         </a>
                     </li>
                     <li>
-                        <a href="" class="social-icon-bg">
-                            <svg class="social-icon" height="20px" width="20px">
+                        <a href="" class="social-list__icon-bg">
+                            <svg class="social-list__icon" height="20px" width="20px">
                                 <use href="./images/icons.svg#twitter"></use>
                             </svg>
                         </a>
                     </li>
                     <li>
-                        <a href="" class="social-icon-bg">
-                            <svg class="social-icon" height="20px" width="20px">
+                        <a href="" class="social-list__icon-bg">
+                            <svg class="social-list__icon" height="20px" width="20px">
                                 <use href="./images/icons.svg#fb"></use>
                             </svg>
                         </a>
                     </li>
                     <li>
-                        <a href="" class="social-icon-bg">
-                            <svg class="social-icon" height="20px" width="20px">
+                        <a href="" class="social-list__icon-bg">
+                            <svg class="social-list__icon" height="20px" width="20px">
                                 <use href="./images/icons.svg#li"></use>
                             </svg>
                         </a>
                     </li>
                 </ul>
             </div>
-
+    
             <form class="subscribe">
                 <label for="email">Підпишіться на розсилку</label>
-                <input type="email" name="email" class="footer-email" id="email" placeholder="E-mail">
-                <button type="submit" class="subscribe-button">
+                <input type="email" name="email" class="subscribe__email" id="email" placeholder="E-mail">
+                <button type="submit" class="subscribe__button">
                     Підписатися
                     <svg height="24" width="24" class="tg-svg">
                         <use href="./images/icons.svg#tg"></use>
@@ -264,8 +265,6 @@
                 </button>
             </form>
         </div>
-
-        
     </footer>
 </body>
 </html>
