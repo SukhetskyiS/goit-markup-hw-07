@@ -1,0 +1,86 @@
+.hero {
+    background-color: var(--button-bgc);
+    padding-bottom: 94px;
+    padding-top: 94px;
+}
+
+.hero__title {
+    color: var(--title-text-color);
+
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+    letter-spacing: 0.03em;
+
+    margin-bottom: 50px;
+}
+
+.hero__item {
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+        0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+}
+
+.hero__name {
+    color: var(--title-text-color);
+
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.19;
+    text-align: center;
+    letter-spacing: 0.03em;
+    margin-bottom: 10px;
+}
+
+.hero__text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.19;
+    text-align: center;
+    letter-spacing: 0.03em;
+}
+
+.hero__list {
+    display: flex;
+    justify-content: space-between;
+}
+
+.hero__container {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    border-radius: 0px 0px 4px 4px;
+
+    background-color: var(--white-text-color);
+}
+
+.social-list {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 32px;
+    padding-right: 32px;
+    margin-top: 16px;
+}
+
+.social-list__icon-bg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 44px;
+    width: 44px;
+    border-radius: 50%;
+
+    fill: var(--icon-color);
+    background: rgba(255, 255, 255, 0.1);
+
+    transition-property: fill, background-color;
+    transition-duration: var(--transition-duration);
+    transition-timing-function: var(--transition-timing-function);
+}
+
+.social-list__icon-bg:hover,
+.social-list__icon-bg:focus {
+    background: var(--accent-color);
+    fill: var(--white-text-color);
+}
