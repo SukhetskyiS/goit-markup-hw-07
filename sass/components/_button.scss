@@ -55,7 +55,7 @@
 }
 
 .backdrop__button {
-  transition: fill var(--transition-duration) var(--transition-timing-function);
+  @include transition(fill);
 
   position: absolute;
   display: flex;

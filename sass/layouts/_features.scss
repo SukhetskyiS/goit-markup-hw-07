@@ -26,13 +26,16 @@
   }
 
   &__icon-bg {
-    background: var(--button-bgc);
-    border-radius: 4px;
-    margin-bottom: 30px;
     display: flex;
-    height: 120px;
-    width: 270px;
     justify-content: center;
     align-items: center;
+
+    height: 120px;
+    width: 270px;
+
+    margin-bottom: 30px;
+
+    background: var(--button-bgc);
+    border-radius: 4px;
   }
 }

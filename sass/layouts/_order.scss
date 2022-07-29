@@ -1,7 +1,9 @@
 .order {
   height: 600px;
   max-width: 1600px;
+
   margin: 0 auto;
+
   background-image: linear-gradient(
       to right,
       rgba(47, 48, 58, 0.4),
@@ -10,9 +12,9 @@
     url(../images/background.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-
   background-position: center;
   background-color: var(--background-color);
+
   text-align: center;
 
   &__container--paddings {

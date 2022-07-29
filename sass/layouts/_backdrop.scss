@@ -11,6 +11,7 @@
   transition: visibility var(--transition-duration)
       var(--transition-timing-function),
     opacity var(--transition-duration) var(--transition-timing-function);
+
   &.is-hidden {
     visibility: hidden;
     opacity: 0;
@@ -36,11 +37,9 @@
   border-radius: 4px;
 
   &__title {
-    font-weight: 700;
-    font-size: 20px;
-    line-height: 1.15;
+    @include font(700, 20px, 1.15, 0.03em);
+
     text-align: center;
-    letter-spacing: 0.03em;
 
     color: var(--title-text-color);
 
@@ -49,7 +48,6 @@
 }
 
 .modal__field {
-  /* outline: 1px solid blue; */
   display: flex;
   flex-direction: column;
 
@@ -75,6 +73,8 @@
 }
 
 .modal__input {
+  @include transition(border);
+
   width: 100%;
   height: 40px;
   padding-left: 42px;
@@ -83,9 +83,6 @@
   border-radius: 4px;
 
   outline: none;
-
-  transition: border var(--transition-duration)
-    var(--transition-timing-function);
 
   &:focus {
     border-color: var(--accent-color);
@@ -97,13 +94,13 @@
 }
 
 .modal__icon {
+  @include transition(fill);
+
   position: absolute;
   left: 12px;
   top: 50%;
   transform: translateY(-50%);
   fill: var(--title-text-color);
-
-  transition: fill var(--transition-duration) var(--transition-timing-function);
 
   .modal__input:focus + & {
     fill: var(--accent-color);
@@ -111,6 +108,8 @@
 }
 
 .modal__textarea {
+  @include transition(border);
+
   height: 120px;
   width: 100%;
   padding: 12px 16px;
@@ -118,19 +117,13 @@
   border-radius: 4px;
   outline: none;
 
-  transition: border var(--transition-duration)
-    var(--transition-timing-function);
-
   resize: none;
 
   &:focus {
     border-color: var(--accent-color);
   }
   &::placeholder {
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 1.17;
-    letter-spacing: 0.01em;
+    @include font(none, 12px, 1.17, 0.01em);
 
     color: rgba(117, 117, 117, 0.5);
   }
@@ -140,25 +133,22 @@
   margin-bottom: 30px;
 
   &__agreement {
+    @include font(none, 14px, 1.71, 0.03em);
+
     display: inline-block;
     margin-left: 7px;
-    font-size: 14px;
-    line-height: 1.71;
-    letter-spacing: 0.03em;
+
     text-decoration-line: underline;
 
     color: var(--accent-color);
   }
 
   &__text {
+    @include font(none, 14px, 1.71, 0.03em);
+
     display: flex;
     align-items: center;
     justify-content: center;
-
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 1.71;
-    letter-spacing: 0.03em;
 
     color: var(--primary-text-color);
   }
@@ -167,9 +157,12 @@
 .checkbox-block__text .checkbox-block__svg {
   width: 16px;
   height: 15px;
+
   border: 2px solid var(--title-text-color);
   border-radius: 2px;
+
   margin-right: 7px;
+
   display: flex;
   align-items: center;
   justify-content: center;
