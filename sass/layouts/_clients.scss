@@ -16,9 +16,7 @@
 .clients__icon {
     fill: var(--icon-color);
 
-    transition-property: fill;
-    transition-duration: var(--transition-duration);
-    transition-timing-function: var(--transition-timing-function);
+    @include transition(fill);
 }
 
 .clients__icon-bg {
@@ -30,9 +28,7 @@
     border: 1px solid var(--icon-color);
     border-radius: 4px;
 
-    transition-property: border-color;
-    transition-duration: var(--transition-duration);
-    transition-timing-function: var(--transition-timing-function);
+    @include transition(border-color);
 }
 
 .clients__icon-bg:hover,

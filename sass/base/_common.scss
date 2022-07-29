@@ -1,11 +1,12 @@
-body {
-    /* max-width: 1600px; */
+body {    
     margin: 0 auto;
-    /* border: 1px solid black; */
-
-    color: var(--primary-text-color);
 
     font-family: Roboto, sans-serif;
+
+    color: var(--primary-text-color);
+    
+    /* border: 1px solid black; */
+    /* max-width: 1600px; */
 }
 
 .list {

@@ -1,7 +1,4 @@
-.order__container--paddings {
-    padding-top: 200px;
-    padding-bottom: 200px;
-}
+
 
 .order {
     height: 600px;
@@ -17,32 +14,25 @@
     background-position: center;
     background-color: var(--background-color);
     text-align: center;
+
+    &__container--paddings {
+        padding-top: 200px;
+        padding-bottom: 200px;
+    }
+    &__title--color {
+        color: var(--white-text-color);
+    
+        @include font(900, 44px, 1.36, 0.06em);
+    
+        text-align: center;
+        text-transform: uppercase;
+    
+        display: inline-block;
+        margin-bottom: 30px;
+        max-width: 696px;
+    }
+        
 }
 
-.order__title,
-.jobs__title {
-    margin-top: 0;
-    margin-bottom: 50px;
-    color: var(--title-text-color);
 
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 1.17;
-    text-align: center;
-    letter-spacing: 0.03em;
-}
 
-.order__title--color {
-    color: var(--white-text-color);
-
-    font-weight: 900;
-    font-size: 44px;
-    line-height: 1.36;
-    text-align: center;
-    letter-spacing: 0.06em;
-    text-transform: uppercase;
-
-    display: inline-block;
-    margin-bottom: 30px;
-    max-width: 696px;
-}
