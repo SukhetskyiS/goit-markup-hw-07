@@ -1,25 +1,22 @@
 .clients {
-    padding-bottom: 94px;
-    padding-top: 94px;
-}
+  padding-bottom: 94px;
+  padding-top: 94px;
 
-.clients__title {
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 42px;
+  &__title {
+    @include font(700, 36px, 1.67, 0.03em);
+
     text-align: center;
-    letter-spacing: 0.03em;
 
     color: var(--title-text-color);
-}
+  }
 
-.clients__icon {
+  &__icon {
     fill: var(--icon-color);
 
     @include transition(fill);
-}
+  }
 
-.clients__icon-bg {
+  &__icon-bg {
     display: flex;
     width: 170px;
     height: 92px;
@@ -27,21 +24,20 @@
     align-items: center;
     border: 1px solid var(--icon-color);
     border-radius: 4px;
+  }
 
-    @include transition(border-color);
-}
-
-.clients__icon-bg:hover,
-.clients__icon-bg:hover .clients__icon,
-.clients__icon-bg:focus,
-.clients__icon-bg:focus .clients__icon {
+  &__icon-bg:hover,
+  &__icon-bg:hover &__icon,
+  &__icon-bg:focus,
+  &__icon-bg:focus &__icon {
     border-color: var(--accent-color);
     fill: var(--accent-color);
     cursor: pointer;
-}
+  }
 
-.clients__list {
+  &__list {
     display: flex;
     gap: 30px;
     margin-top: 50px;
+  }
 }

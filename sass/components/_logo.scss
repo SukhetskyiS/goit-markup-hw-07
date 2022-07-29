@@ -1,17 +1,17 @@
-.logo {
-  @include font(null, 26px, 1.19, 0.03em);
-
+.logo--accent {
+  @include font(700, 26px, 1.19, 0.03em);
   font-family: Raleway, sans-serif;
+  color: var(--accent-color);
+}
 
-  &--accent {
-    color: var(--accent-color);
-  }
+.logo--primary {
+  @include font(700, 26px, 1.19, 0.03em);
+  font-family: Raleway, sans-serif;
+  color: var(--logo-color-primary);
+}
 
-  &--primary {
-    color: var(--logo-color-primary);
-  }
-
-  &--secondary {
-    color: var(--white-text-color);
-  }
+.logo--secondary {
+  @include font(700, 26px, 1.19, 0.03em);
+  font-family: Raleway, sans-serif;
+  color: var(--white-text-color);
 }

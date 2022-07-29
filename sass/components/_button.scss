@@ -27,7 +27,12 @@
 
   &__secondary {
     @include font(500, 16px, 1.63, 0.03em);
-    @include transition(color, background-color, box-shadow);
+
+    transition: color var(--transition-duration)
+        var(--transition-timing-function),
+      background-color var(--transition-duration)
+        var(--transition-timing-function),
+      box-shadow var(--transition-duration) var(--transition-timing-function);
 
     color: var(--title-text-color);
     background-color: var(--button-bgc);
@@ -50,7 +55,7 @@
 }
 
 .backdrop__button {
-  @include transition(fill);
+  transition: fill var(--transition-duration) var(--transition-timing-function);
 
   position: absolute;
   display: flex;

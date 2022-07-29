@@ -1,98 +1,88 @@
 .filter {
-    padding-top: 94px;
-    padding-bottom: 94px;
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 
 .filter-foto__title {
-    color: var(--title-text-color);
+  @include font(700, 18px, 2, 0.06em);
 
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 2;
-    letter-spacing: 0.06em;
+  color: var(--title-text-color);
 
-    margin-bottom: 4px;
+  margin-bottom: 4px;
 }
 
 .filter-foto__text {
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 1.89;
-    letter-spacing: 0.03em;
+  @include font(none, 16px, 1.89, 0.03em);
 }
 
-.filter__item+.filter__item {
-    margin-left: 8px;
+.filter__item + .filter__item {
+  margin-left: 8px;
 }
 
 .filter__list {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 50px;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
 }
 
 .filter-foto__list {
-    position: relative;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 .filter-foto__item {
-    width: 370px;
-    cursor: pointer;
+  @include transition(box-shadow);
 
-    transition-property: box-shadow;
-    transition-duration: var(--transition-duration);
-    transition-timing-function: var(--transition-timing-function);
+  width: 370px;
+  cursor: pointer;
+
+  &:hover {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+      1px 4px 6px rgba(0, 0, 0, 0.16);
+  }
+
+  &:nth-child(n + 4) {
+    margin-top: 30px;
+  }
 }
 
 .filter-foto__thumb {
-    position: relative;
-    overflow: hidden;
+  position: relative;
+  overflow: hidden;
 }
 
 .filter-foto__overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    padding: 63px 24px;
+  @include transition(transform);
+  @include font(none, 18px, 1.56, 0.03em);
 
-    background: rgba(33, 150, 243, 0.9);
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  padding: 63px 24px;
 
-    font-style: normal;
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 1.56;
-    letter-spacing: 0.03em;
-    color: var(--white-text-color);
+  background: rgba(33, 150, 243, 0.9);
 
-    transform: translateY(100%);
+  font-style: normal;
 
-    transition: transform var(--transition-duration) var(--transition-timing-function);
-}
+  color: var(--white-text-color);
 
-.filter-foto__item:hover .filter-foto__overlay {
+  transform: translateY(100%);
+
+  .filter-foto__item:hover & {
     transform: translateY(0px);
-}
-
-.filter-foto__item:hover {
-    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
-        1px 4px 6px rgba(0, 0, 0, 0.16);
-}
-
-.filter-foto__item:nth-child(n + 4) {
-    margin-top: 30px;
+  }
 }
 
 .filter-foto__container {
-    padding: 20px 24px;
+  padding: 20px 24px;
 
-    width: 370px;
+  width: 370px;
 
-    border-left: 1px solid var(--border-color);
-    border-right: 1px solid var(--border-color);
-    border-bottom: 1px solid var(--border-color);
+  border-left: 1px solid var(--border-color);
+  border-right: 1px solid var(--border-color);
+  border-bottom: 1px solid var(--border-color);
 }
